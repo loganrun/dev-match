@@ -17,6 +17,8 @@
               <% end %><br />
               <%= f.password_field :password, autocomplete: "off", class:'form-control' %>
             </div>
+            
+            <%= hidden_field_tag 'plan', params[:plan] %>
           
             <div class="field form-group">
               <%= f.label :password_confirmation %><br />
@@ -38,6 +40,6 @@
             </div>
           
             <div class="actions">
-              <%= f.submit "Sign up", class:'btn btn-success' %>
+              <%= f.submit "Sign up", class:'btn btn-success', id: 'form-submit-btn' %>
             </div>
           <% end %>
