@@ -42,7 +42,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   
 # add stripe gem for credit card payments
   gem 'stripe', '1.16.1'
-  
+# use figaro to hide secret keys
   gem 'figaro', '1.0.0'
 
 group :development, :test do
